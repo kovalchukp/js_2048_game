@@ -230,16 +230,7 @@ class Game {
   }
 
   _transpose(board) {
-    const out = Array.from({ length: this.size }, () =>
-      Array(this.size).fill(0));
-
-    for (let r = 0; r < this.size; r++) {
-      for (let c = 0; c < this.size; c++) {
-        out[c][r] = board[r][c];
-      }
-    }
-
-    return out;
+    return board[0].map((_, c) => board.map((row) => row[c]));
   }
 
   // After a moved board
