@@ -157,7 +157,6 @@ class Game {
     return true;
   }
 
-  // Core row-moving utility.
   _moveRows(mapRowFn, reverseFlag = false, matrixOverride = null) {
     const matrix = matrixOverride || this.board;
     const newMatrix = [];
