@@ -88,7 +88,7 @@ startButton.addEventListener('click', () => {
     game.restart();
   }
 
-  // Update UI after restart
+  // Update UI after restarting
   messageStart.classList.add('hidden');
   messageWin.classList.add('hidden');
   messageLose.classList.add('hidden');
